@@ -29,7 +29,24 @@
             <li class="li8"><i class="iconfont icon-ten"></i><p>十秒报价</p></li>
           </ul>
       </div>
-      
+      <!-- 全屋装修 -->
+      <div class="quan">
+        <p class="shang"><span class="xiu">全屋装修</span><span class="bao">包设计</span>
+        <span class="bao">包主材</span><span class="bao">包水电</span>
+        <span class="bao">包施工</span>
+        </p>
+        <p class="lun2">
+           <van-swipe class="lun" :autoplay="3000" indicator-color="white">
+          <van-swipe-item><img  src="../assets/切图/img1.jpg"></van-swipe-item>
+          <van-swipe-item><img  src="../assets/切图/house_info.jpg"></van-swipe-item>
+         </van-swipe>
+        </p>
+         <p class="xia">
+           <i class="iconfont icon-zero"><span>0增项，标准施工</span></i>
+           <i class="iconfont icon-protection-fill"><span>杜绝项目外包</span></i>
+           <i class="iconfont icon-price"><span>装修贷款</span></i>
+         </p>
+      </div>
   </div>
 </template>
 <style lang="scss">
@@ -39,11 +56,13 @@
 }
 #app{
   width: 100%;
-  height: 100%;
+  height:800px;
+  background: #cccccc;
 }
 .ding{ 
   width: 100%;
   height: 60px;
+  background: white;
   
   .fang{
     width: 65px;
@@ -95,7 +114,8 @@
 }
 .biao{
   width: 100%;
-  height: 100%;
+  height: 220px;
+  background: white;
   ul{
     list-style: none;
     li{
@@ -146,6 +166,42 @@
     }
   }
 }
-
+.quan{
+  width: 100%;
+  height: 300px;
+  background: white;
+  .shang{
+    width: 100%;
+    height: 30px;
+    margin-top: 30px;
+    text-align: center;
+    .xiu{
+      font-size: 20px;
+      color: black;
+      margin-left: 15px;
+    }
+    .bao{
+      font-size: 15px;
+      color: #999999;
+      margin-left: 15px;
+    }
+  }
+  .xia{
+    margin-top: 36px;
+    width: 100%;
+    font-size: 15px;
+    i{
+      color: #39c894;
+      span{
+        color: black;
+      }
+    }
+  }
+  .lun2{
+    width: 100%;
+    height: 150px;
+    margin-top: 30px;
+  }
+}
 </style>
 
