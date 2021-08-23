@@ -1,11 +1,16 @@
 <template>
   <div id="app">
+    <!-- 顶部 -->
       <div class="ding">
           <img src="../assets/切图/logo.png" class="fang">
           <div class="tu">
             <div class="wo"><img src="../assets/img/2.png" ><p>我的</p></div>
             <div class="dao"><img src="../assets/img/1.png"><p>导航</p></div>
           </div>
+      </div>
+      <!-- 轮播图 -->
+      <div class="lun">
+          <img class="lun1" src="../assets/切图/banner.jpg">
       </div>
   </div>
 </template>
@@ -18,10 +23,10 @@
   width: 100%;
   height: 100%;
 }
-.ding{
+.ding{ 
   width: 100%;
   height: 82px;
-  background: red;
+  
   .fang{
     width: 120px;
     height: 50px;
@@ -61,6 +66,14 @@
   }
   }
  
+}
+.lun{
+  width: 100%;
+  height:150px;
+  .lun1{
+     width: 100%;
+  height: 100%;
+  }
 }
 </style>
 
